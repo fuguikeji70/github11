@@ -1,0 +1,266 @@
+[
+  {
+    "file": "assets/img/app-download-bg.png",
+    "bytes": 269541,
+    "sha256": "66119796a9f6b54878f975f7958305378c3d4abbb6d34787222b69a57ad26fbc",
+    "source": "https://u18ok.com/images/PC/h5-bg.png"
+  },
+  {
+    "file": "assets/img/app-preview.png",
+    "bytes": 125021,
+    "sha256": "7c90e15386f9c92961291394d878aceefbb2b68ad9d6fb0c14f5aadf5ac8d1ce",
+    "source": "https://u18ok.com/images/PC/other-a.png"
+  },
+  {
+    "file": "assets/img/banner-1.jpg",
+    "bytes": 470673,
+    "sha256": "7fa234d2bf5449879736b3b8f12b1b8b49ed6e613d00bdf600e82fd3424c01e1",
+    "source": "https://s3.bjihn.com/h5/1786798910796096928.jpg",
+    "alt": "每日充值奖励"
+  },
+  {
+    "file": "assets/img/banner-2.jpg",
+    "bytes": 498908,
+    "sha256": "eaec7a068fc5040303992e44833e7a66e6d324f20de88a45eefc5b41ab6f196f",
+    "source": "https://s3.bjihn.com/h5/1786886774607572718.jpg",
+    "alt": "电子捕鱼棋牌流水大转盘"
+  },
+  {
+    "file": "assets/img/banner-3.jpg",
+    "bytes": 447717,
+    "sha256": "6b71e899f60e77d2d2b491a5efb2eb542e18b3a9ea485eda6d29ad66f150188e",
+    "source": "https://s3.bjihn.com/h5/1786799031202770335.jpg",
+    "alt": "代理福利"
+  },
+  {
+    "file": "assets/img/banner-4.jpg",
+    "bytes": 492034,
+    "sha256": "1e12b56c04839fa710a2c46d33d2b819c4f2ca5fc923f43c1a6d04960c36c560",
+    "source": "https://s3.bjihn.com/h5/1786799112819722192.jpg",
+    "alt": "电子救援金"
+  },
+  {
+    "file": "assets/img/banner-5.jpg",
+    "bytes": 453130,
+    "sha256": "05474958de47b21cfd5820da4a4f9ecd66f0c12025ddc85872aa96aad45d6c72",
+    "source": "https://s3.bjihn.com/h5/1786799175792973889.jpg",
+    "alt": "加拿大28返水"
+  },
+  {
+    "file": "assets/img/banner-6.jpg",
+    "bytes": 480474,
+    "sha256": "f01275afc90c852f34afb8fd485ae686eabc934f27e04863f8849a967e2a80b2",
+    "source": "https://s3.bjihn.com/h5/1786799230046428953.jpg",
+    "alt": "玩家特别返水"
+  },
+  {
+    "file": "assets/img/cat-live.jpg",
+    "bytes": 124179,
+    "sha256": "28527b35defe57d555be19f1859afa1173ef32ce37426b929f89b636003fa1d5",
+    "source": "https://s3.bjihn.com/h5/1787038298138185187.jpg"
+  },
+  {
+    "file": "assets/img/cat-lottery.jpg",
+    "bytes": 99211,
+    "sha256": "1ee3e4be0b94511b234b374a1ef678c4b978de4947a797e3f69c525d9dd51e53",
+    "source": "https://s3.bjihn.com/h5/1788362226105414268.jpg"
+  },
+  {
+    "file": "assets/img/deco-left.png",
+    "bytes": 4495,
+    "sha256": "0526c6bf9354cc16c49024337f735b7b7dc2a7a0e342d32ce917178ea97adc42",
+    "source": "https://u18ok.com/images/1082/aazuo.png"
+  },
+  {
+    "file": "assets/img/deco-right.png",
+    "bytes": 4603,
+    "sha256": "b3a3dc79d1c30765309ef16d860dd4711ea60b01780797d932528bf659d2639c",
+    "source": "https://u18ok.com/images/1082/aayou.png"
+  },
+  {
+    "file": "assets/img/favicon.png",
+    "bytes": 1501,
+    "sha256": "09842ee872aad1e8706e707770b28c04ed030f6c88e605c18baa7aab30435114",
+    "source": "https://u18ok.com/assets/VnYsMkM9.png"
+  },
+  {
+    "file": "assets/img/game-candy1000.png",
+    "bytes": 222228,
+    "sha256": "03f3c55b23d7c22f8a95f1a32df68ea5a8f3928075544abe3dfcdd73bcf4ae09",
+    "source": "https://s3.bjihn.com/PP/极速糖果1000.png",
+    "title": "极速糖果1000"
+  },
+  {
+    "file": "assets/img/game-fishing-cannon.png",
+    "bytes": 108936,
+    "sha256": "185037355266250c2d09fd6fe260afc8fcacb3a8c850bda79a23be032a6791cf",
+    "source": "https://s3.bjihn.com/h5/1781182279785720096.png",
+    "title": "一炮捕魚"
+  },
+  {
+    "file": "assets/img/game-fishing-dasheng.png",
+    "bytes": 27606,
+    "sha256": "3172fded944d20b4890866b6082d6e7b9834bdd34b8ac3d5176c6ec25660e454",
+    "source": "https://s3.bjihn.com/FCgaming_cn/FC gaming_大圣捕鱼.png",
+    "title": "大圣捕鱼"
+  },
+  {
+    "file": "assets/img/game-fishing-facai.png",
+    "bytes": 25195,
+    "sha256": "0f09045538e6b43268adbfd1525290991335edc061ac6b8c2f5b1f1b1d73d5c2",
+    "source": "https://s3.bjihn.com/FCgaming_cn/FC gaming_发财捕鱼.png",
+    "title": "发财捕鱼"
+  },
+  {
+    "file": "assets/img/game-fishing-gods.png",
+    "bytes": 27645,
+    "sha256": "b00c47cb98269eb6465ed14c37ba1b25249216f5256a3dccd437227c5d9b9762",
+    "source": "https://s3.bjihn.com/FCgaming_cn/FC gaming_众神捕鱼.png",
+    "title": "众神捕鱼"
+  },
+  {
+    "file": "assets/img/game-fishing-happy.png",
+    "bytes": 136492,
+    "sha256": "bed48c8ec2280396288ad21e7eea9d128e1445aa6b729f37a65d64a2ddb56846",
+    "source": "https://s3.bjihn.com/h5/1781182309200620012.png",
+    "title": "歡樂捕魚"
+  },
+  {
+    "file": "assets/img/game-fishing-hero.png",
+    "bytes": 117885,
+    "sha256": "dbbe8cba7dce2801d07f44dcb8293db24012e4c9e005fd241a3a5bbc83d7a22d",
+    "source": "https://s3.bjihn.com/h5/1781182295912299070.png",
+    "title": "英雄捕魚"
+  },
+  {
+    "file": "assets/img/game-mahjong.webp",
+    "bytes": 33144,
+    "sha256": "73a91b6721ec5fd298f7232cf5402cfb7662532eba7e033e532508f760622488",
+    "source": "https://s3.bjihn.com/PG/麻将胡了.webp",
+    "title": "麻将胡了"
+  },
+  {
+    "file": "assets/img/game-mahjong2.webp",
+    "bytes": 49156,
+    "sha256": "5434924fdd0c73c2e68c6a9b31c9788f7e8317c9cabacc70906f8873d5d3324f",
+    "source": "https://s3.bjihn.com/PG/麻将胡了2.webp",
+    "title": "麻将胡了2"
+  },
+  {
+    "file": "assets/img/game-olympus.webp",
+    "bytes": 46268,
+    "sha256": "75799604aba2370c6e4e5dfe4cfe119e5bdf7634921d658c655e26406c86496c",
+    "source": "https://s3.bjihn.com/PP/奥林匹斯之门.webp",
+    "title": "奥林匹斯之门"
+  },
+  {
+    "file": "assets/img/game-olympus1000.webp",
+    "bytes": 44226,
+    "sha256": "79b2c227dba73b79ca33c39b871857f937a82b0893a3038f78ee3b68f6037eff",
+    "source": "https://s3.bjihn.com/PP/奥林匹斯之门1000.webp",
+    "title": "奥林匹斯之门1000"
+  },
+  {
+    "file": "assets/img/game-princess1000.webp",
+    "bytes": 53884,
+    "sha256": "f14d813c62fa2d7d68fbc3485ef755f6fd57c67e26dfcc3c5da8b14b48d03ab1",
+    "source": "https://s3.bjihn.com/PP/星光公主 1000.webp",
+    "title": "星光公主1000"
+  },
+  {
+    "file": "assets/img/logo.png",
+    "bytes": 10749,
+    "sha256": "db657b0dcc40272074f28ff976fdfe43b7c74e6e4d77db392380f6c93bbd1f0d",
+    "source": "https://s3.bjihn.com/h5/1786798679872026411.png"
+  },
+  {
+    "file": "assets/img/qr-android.png",
+    "bytes": 2756,
+    "sha256": "7777784a7b3003c86a2010f286d4720bc2bb8af55c853ad3b2ce2f174b7c8fab",
+    "source": "inline data: URI from rendered DOM (Android QR)"
+  },
+  {
+    "file": "assets/img/qr-ios.png",
+    "bytes": 2680,
+    "sha256": "9040ba3b27f980829ba263355e61527a238c17a61df5dd3288801725b04e93e4",
+    "source": "inline data: URI from rendered DOM (iOS QR)"
+  },
+  {
+    "file": "assets/img/quick-agent.png",
+    "bytes": 19686,
+    "sha256": "1c46d4c7ac81089d2fa6786987b27e263e49d1175bf3cceb5bf2b18afaaaabb1",
+    "source": "https://u18ok.com/images/1082/as9.png"
+  },
+  {
+    "file": "assets/img/quick-deposit.png",
+    "bytes": 19456,
+    "sha256": "5f0c70450e768149e6554ad360776576e2ebf1afa15d5d3965a205804e43d250",
+    "source": "https://u18ok.com/images/1082/as12.png"
+  },
+  {
+    "file": "assets/img/quick-service.png",
+    "bytes": 21304,
+    "sha256": "8247a36342170818f3cd037b0dbab0fa1cfb4b1776f277c4c1451d2f189e21dd",
+    "source": "https://u18ok.com/images/1082/ff1.png"
+  },
+  {
+    "file": "assets/img/quick-withdraw.png",
+    "bytes": 22367,
+    "sha256": "7be4dd83d0de0de0e9485a104ac0251858cd0dd3066893395ce40a60b67a984e",
+    "source": "https://u18ok.com/images/1082/as11.png"
+  },
+  {
+    "file": "assets/img/sub-fishing.jpg",
+    "bytes": 71204,
+    "sha256": "a1c55ef806e6028284f56d8467a12d23fb05d5df9bf28d973336a4c2680c6801",
+    "source": "https://s3.bjihn.com/h5/1787038544658288344.jpg"
+  },
+  {
+    "file": "assets/img/sub-poker.jpg",
+    "bytes": 60457,
+    "sha256": "c42589663c5876202c8f56e60f38b5647e781e15da351b2559817e4637696873",
+    "source": "https://s3.bjihn.com/h5/1787038575327250662.jpg"
+  },
+  {
+    "file": "assets/img/sub-slots.jpg",
+    "bytes": 62327,
+    "sha256": "67f4365b0b176b2b9ab093699328e72a8e7c2af7ae47dfa1e59efb0b17f7858b",
+    "source": "https://s3.bjihn.com/h5/1788362260927202195.jpg"
+  },
+  {
+    "file": "assets/img/sub-sports.jpg",
+    "bytes": 65992,
+    "sha256": "402c2d94fa63751372e0c75053fb31f8ff6df98379b4554dc5d9c150909f9134",
+    "source": "https://s3.bjihn.com/h5/1787038327196343394.jpg"
+  },
+  {
+    "file": "assets/img/tab-activity.png",
+    "bytes": 20143,
+    "sha256": "3e79e6f5b1c4c6bc8d95dbbe0dc5e485b5b8d2b1d7b14983ee457b1f15816971",
+    "source": "https://u18ok.com/images/1082/d3.png"
+  },
+  {
+    "file": "assets/img/tab-home.png",
+    "bytes": 18238,
+    "sha256": "0eb6738fa66c1a819552783a1774afc604bda73403fc465380cf8792f618cc6e",
+    "source": "https://u18ok.com/images/1082/d1.png"
+  },
+  {
+    "file": "assets/img/tab-mine.png",
+    "bytes": 15209,
+    "sha256": "3bd2959ac3cc2dd08fe165aa78a8af11289b9d783c6e74db2522d24bd87f9850",
+    "source": "https://u18ok.com/images/1082/d4.png"
+  },
+  {
+    "file": "assets/img/tab-service.png",
+    "bytes": 29337,
+    "sha256": "eca2a25d3475615cc71eed6d57da8e3cc3e30bea67d634b5a2a592e7cf5b953a",
+    "source": "https://u18ok.com/images/1082/d5.png"
+  },
+  {
+    "file": "assets/img/tab-wallet.png",
+    "bytes": 15949,
+    "sha256": "24408b2891ece093c06dc090fc35fae6e4f946e1443bc49518faaa910ea0a110",
+    "source": "https://u18ok.com/images/1082/d2.png"
+  }
+]

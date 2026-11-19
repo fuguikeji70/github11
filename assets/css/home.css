@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* ==========================================================================
+   u18ok H5 首页 — 页头与页面容器 / home.css
+   说明：原 Banner / 快捷区 / 分类宫格 / 热门游戏 / APP下载 / 社区 等区块已按新
+        版式移除，对应样式移到 assets/css/legacy-unused.css（未引入，仅存档）。
+   ========================================================================== */
+
+.home {
+  /* 左右 12；底部 = tabbar 60 + 内容留白 */
+  padding: 0 .12rem .71rem;
+}
+
+/* ---------- 顶部：logo + 注册/登录 ---------- */
+.home__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .08rem;
+  padding-top: .1rem;
+}
+.home__logo { height: .42rem; width: auto; object-fit: contain; }
+.home__actions { display: flex; align-items: center; gap: .1rem; }

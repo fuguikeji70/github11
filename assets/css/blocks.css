@@ -1,0 +1,294 @@
+@charset "UTF-8";
+/* ==========================================================================
+   u18ok H5 首页 — 合并自 123/4 的区块（已并入墨绿主题）
+   顺序：优惠活动轮播 → 入场横幅 → 8 分类循环滚动 → 中段横幅
+   尺寸沿用 base.css 规则：1rem = 100 设计像素（375 基准）
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   0. 横向循环滚动轨道（仅「游戏分类」使用）
+      轨道被 main.js 复制一份内容后用 translateX(-50% - gap/2) 无缝循环
+   -------------------------------------------------------------------------- */
+.marquee {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 4%, #000 96%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0, #000 4%, #000 96%, transparent 100%);
+}
+.marquee__track {
+  --gap: .1rem;
+  display: flex;
+  gap: var(--gap);
+  width: max-content;
+  will-change: transform;
+}
+.marquee__track.is-animated { animation: marquee-scroll var(--cycle, 30s) linear infinite; }
+.marquee:hover .marquee__track.is-animated { animation-play-state: paused; }
+@keyframes marquee-scroll {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(calc(-50% - var(--gap) / 2), 0, 0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee__track.is-animated { animation: none; }
+}
+
+/* --------------------------------------------------------------------------
+   1. 优惠活动：一次一张，每 3 秒自动切下一张（源 123：.offers / .offer）
+      左文案 + 右插画，整卡 100% 宽；下方 4 个指示点
+   -------------------------------------------------------------------------- */
+.offers { position: relative; margin-top: .1rem; }
+
+.offers__track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  cursor: grab;
+  user-select: none;
+}
+.offers__track::-webkit-scrollbar { display: none; }
+.offers__track.is-dragging { cursor: grabbing; scroll-snap-type: none; }
+/* 卡片是链接，原生拖动会打断拖拽翻页，这里统一禁掉 */
+.offers__track a,
+.offers__track img { -webkit-user-drag: none; }
+
+.offer {
+  position: relative;
+  display: flex;
+  flex: 0 0 100%;
+  align-items: center;
+  /* 高度 = 原 110 × 1.4 ≈ 154（上下各加 40%） */
+  min-height: 1.54rem;
+  padding: .1rem .12rem;
+  border: 1px solid #dcebe0;
+  border-radius: .12rem;
+  background: linear-gradient(135deg, #ffffff 0%, #eaf6ea 100%);
+  box-shadow: 0 .04rem .12rem rgba(23, 88, 55, .06);
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+/* 插画：贴右、按高度缩放，透明 webp 直接压在浅色卡上 */
+.offer__art {
+  position: absolute;
+  right: .02rem;
+  bottom: 0;
+  z-index: 0;
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  pointer-events: none;
+}
+.offer__copy {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .04rem;
+  max-width: 62%;
+}
+.offer__title {
+  margin: 0;
+  font-size: .17rem;
+  font-weight: 800;
+  letter-spacing: .01rem;
+  line-height: 1.2;
+  color: #10321c;
+}
+.offer__detail {
+  margin: 0;
+  font-size: .12rem;
+  color: var(--vice);
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.offer__detail b {
+  margin: 0 .02rem;
+  font-size: .2rem;
+  font-weight: 800;
+  color: var(--brand);
+}
+.offer__detail small { font-size: .11rem; font-weight: 700; color: var(--brand); }
+/* 领取按钮（源 .small-button.gold） */
+.offer__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .04rem;
+  height: .26rem;
+  margin-top: .02rem;
+  padding: 0 .12rem;
+  border-radius: 999px;
+  background: var(--grad90);
+  color: #fff;
+  font-size: .11rem;
+  font-weight: 700;
+  white-space: nowrap;
+  box-shadow: 0 .02rem .06rem rgba(34, 160, 71, .35);
+}
+.offer__btn i { font-style: normal; font-size: .1rem; opacity: .9; }
+
+/* 指示点 */
+.offers__dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .04rem;
+  margin-top: .08rem;
+}
+.offers__dot {
+  width: .06rem;
+  height: .03rem;
+  border-radius: 999px;
+  background: var(--vice);
+  opacity: .45;
+  cursor: pointer;
+  transition: width .3s, background-color .3s, opacity .3s;
+}
+.offers__dot.is-active { width: .19rem; background: var(--active); opacity: 1; }
+
+/* --------------------------------------------------------------------------
+   2. 入场横幅（源 123：entry-banner-mobile.webp）
+      图片自带透明通道，直接压在页面绿底上，不垫白卡
+   -------------------------------------------------------------------------- */
+.entry-banner {
+  display: block;
+  margin-top: .1rem;
+  background: transparent;
+}
+.entry-banner img { display: block; width: 100%; height: auto; }
+
+/* --------------------------------------------------------------------------
+   3. 8 个分类（原热门游戏位）
+   -------------------------------------------------------------------------- */
+.cats { margin-top: .1rem; padding: .02rem 0; }
+
+.cat {
+  display: flex;
+  flex: 0 0 1.06rem;
+  flex-direction: column;
+  align-items: center;
+  width: 1.06rem;
+  padding: .1rem .06rem .1rem;
+  border: 1px solid var(--border);
+  border-radius: .12rem;
+  background: var(--card);
+  box-shadow: 0 .02rem .08rem rgba(23, 88, 55, .05);
+}
+.cat__icon { width: .62rem; height: .62rem; object-fit: contain; }
+.cat__name {
+  margin-top: .04rem;
+  font-size: .13rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--ink);
+  white-space: nowrap;
+}
+.cat__play {
+  margin-top: .05rem;
+  padding: .02rem .1rem;
+  border-radius: 999px;
+  background: var(--soft);
+  color: var(--brand);
+  font-size: .1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+/* --------------------------------------------------------------------------
+   4. 中段横幅（源 123：banner-mid.webp，1200×150 细横条）
+   -------------------------------------------------------------------------- */
+.mid-banner {
+  display: block;
+  margin-top: .1rem;
+  border-radius: .1rem;
+  overflow: hidden;
+}
+.mid-banner img { display: block; width: 100%; height: auto; }
+
+/* --------------------------------------------------------------------------
+   5. 活动抽屉：从底部推上来，里面是优惠活动的竖排列表
+   -------------------------------------------------------------------------- */
+.drawer { position: fixed; inset: 0; z-index: 90; }
+.drawer[hidden] { display: none; }
+
+.drawer__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 38, 26, .45);
+  opacity: 0;
+  transition: opacity .28s ease;
+}
+.drawer__sheet {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 420px;
+  max-height: 88vh;   /* 4 张卡刚好完整露出，小屏自动变成可滚动 */
+  padding: .04rem .12rem .16rem;
+  border-radius: .16rem .16rem 0 0;
+  background: linear-gradient(180deg, #f6fcf7 0%, #e8f5ea 100%);
+  box-shadow: 0 -.08rem .3rem rgba(10, 38, 26, .22);
+  transform: translate(-50%, 100%);
+  transition: transform .32s cubic-bezier(.22, .61, .36, 1);
+}
+.drawer.is-open .drawer__backdrop { opacity: 1; }
+.drawer.is-open .drawer__sheet { transform: translate(-50%, 0); }
+
+/* 顶部小把手（纯视觉，提示可下滑关闭） */
+.drawer__grabber {
+  display: block;
+  width: .36rem;
+  height: .04rem;
+  margin: .04rem auto .02rem;
+  border-radius: 999px;
+  background: rgba(16, 50, 28, .18);
+}
+.drawer__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .04rem .02rem .06rem;
+}
+.drawer__title {
+  margin: 0;
+  font-size: .17rem;
+  font-weight: 800;
+  letter-spacing: .01rem;
+  color: #10321c;
+}
+.drawer__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: .28rem;
+  height: .28rem;
+  border-radius: 999px;
+  background: rgba(16, 50, 28, .08);
+  color: #10321c;
+  font-size: .2rem;
+  line-height: 1;
+}
+.drawer__body {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: .02rem;
+}
+
+/* 抽屉里的竖排：4 张卡自上而下，尺寸与首页轮播卡一致 */
+.offers--stack {
+  display: flex;
+  flex-direction: column;
+  gap: .08rem;
+  margin-top: 0;
+}
+.offers--stack .offer {
+  flex: 0 0 auto;   /* 父级是纵向 flex，必须覆盖 flex-basis:100% */
+  width: 100%;
+  scroll-snap-align: none;
+}
